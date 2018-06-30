@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="l div">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/materialize.min.css" />
+
+
+    <script type="text/javascript" src="assets/jquery-sc.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="assets/materialize.min.js"></script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="grey darken-3 white-text">
+    <div class="popup">
+      <div class="row">
+        <form class="modVehicle col m4 offset-m4 grey darken-4">
+          <h3>Modification</h3>
+          <div class="col m12 input-field">
+            <label>Marque</label>
+            <input type="text" class="txmMarque" />
+          </div>
+          <div class="col m12 input-field">
+            <label>Couleur</label>
+            <input type="text" class="txmColor" />
+          </div>
+          <div class="col m12 input-field">
+            <label>Code</label>
+            <input type="text" class="txmCode" />
+          </div>
+          <div class="col m12">
+              <input type="button" class="btn btn-flat white-text waves-effect waves-light btSaveMod" value="Modifier" />
+              <input type="reset" class="btn waves-effect red" value="clean" />
+              <input type="button" class="btn btn-flat white-text waves-effect waves-light bClose" value="fermer" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <header class="row">
+      <div class="col m12"><center><h1><b>Javascript</b> CODELAB</h1></center></div>
+    </header>
+
+    <div class="row">
+      <div class="col m2 menu_left">
+        <div class="col m12 elm" data="createZone">Nouveau</div>
+        <div class="col m12 elm" data="modZone">Modifier</div>
+        <div class="col m12 elm" data="delZone">Supprimer</div>
+      </div>
+
+      <div class="col m10 loadArea">
+        <div class="col m8 offset m2 zone createZone">
+          <div class="col m12"><center><font class="flow-text">Nouveau vehicule</font></center></div>
+          <form class="col m6 fCreateVh offset-m3">
+              <div class="col m12 input-field">
+                <label>Marque</label>
+                <input type="text" class="txMarque" />
+              </div>
+              <div class="col m12 input-field">
+                <label>Couleur</label>
+                <input type="text" class="txColor" />
+              </div>
+              <div class="col m12 input-field">
+                <label>Code</label>
+                <input type="text" class="txCode" />
+              </div>
+              <div class="col m12">
+                  <input type="button" class="btn waves-effect waves-light btCreateCar" value="creer" />
+                  <input type="reset" class="btn waves-effect red" value="clean" />
+              </div>
+          </form>
+        </div>
+        <div class="col m8 offset m2 zone modZone">
+          <div class="col m12"><center><font class="flow-text">Modifier vehicule</font></center></div>
+        </div>
+        <div class="col m8 offset m2 zone delZone">
+          <div class="col m12"><center><font class="flow-text">Supprimer vehicule</font></center></div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <style media="screen">
+      header{border-bottom: solid .7px #fff;}
+
+      .zone{display: none;}
+      .elm{cursor: pointer; line-height: 35px; border-bottom: solid .7px #fff;}
+      .popup{position: fixed; top:0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.7); z-index: 1001; display: none;}
+    </style>
+    <script type="text/javascript" src="js/test.js"></script>
+
+  </body>
+</html>

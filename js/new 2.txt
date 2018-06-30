@@ -1,0 +1,37 @@
+Mnipulqtion dom
+Requetes vers un serveur
+Animations
+acceder a des fontionalites chez le client
+
+var :: VARIABLES
+conditions
+boucles
+les talbeaux
+
+document.findElementById
+document.findElementByClassName
+document.findElementByTagName
+
+JQuery --> basé sur javascript
+
+input :: 
+ex: 
+	var i = document.getElementByClass('entree');
+	i.value :: La valeur qui a été saisie
+	
+	.innerHTML ='<h1>Ecriture d'un grand titre</h1>';
+	
+$('#formVehicle').submit(
+	function(e){
+		e.preventDefault();
+		
+		/*
+			ifh uifowe
+			feiwufioew
+		*/
+	}
+);
+
+	.hide(); ==> display : none;
+	
+	
